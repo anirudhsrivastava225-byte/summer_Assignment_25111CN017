@@ -1,7 +1,7 @@
 package Day_5;
 import java.util.Scanner ;
 public class LargestPrimeFactor {
-    private int number ;
+    private final int number ;
      LargestPrimeFactor ( int n ) {
         this.number = n ;
     }
@@ -9,6 +9,7 @@ public class LargestPrimeFactor {
          if ( number == 0 ) return 0 ;
          if ( number == 1 ) return 1 ;
          int reqFactor = 0 ;
+         int num = number ;
 //OLD METHOD
 //         for ( int i = 2 ; i <= number ; i++ ) {
 //             int notPrimeSignal = 0 ;
@@ -22,15 +23,17 @@ public class LargestPrimeFactor {
 //             }
 //         }
         //NEW METHOD
-          while ( number % 2 == 0 ) {
-              number /= 2 ;
+          while ( num % 2 == 0 ) {
+              num /= 2 ;
+              reqFactor = 2 ;
           }
-          for ( int i = 3 ; i < Math.sqrt(number) ; i+= 2 ) {
-              while ( number % i == 0 ){
-                  number /= i ;
-                  reqFactor = number ;
+          for ( int i = 3 ; i <= Math.sqrt(num) ; i+= 2 ) {
+              while ( num % i == 0 ){
+                  num /= i ;
+                  reqFactor = i ;
               }
           }
+          if ( num > 2 ) reqFactor = num ;
          return (reqFactor) ;
     }
 }
