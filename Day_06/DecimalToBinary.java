@@ -1,4 +1,4 @@
-package Day_6 ;
+package Day_06;
 import java.util.Scanner ;
 public class DecimalToBinary {
     private double decaStorage ;

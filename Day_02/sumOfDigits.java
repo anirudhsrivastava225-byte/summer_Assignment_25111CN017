@@ -1,4 +1,4 @@
-package Day_2;
+package Day_02;
 import java.util.*;
 public class sumOfDigits {
     public static void main (String[] args) {

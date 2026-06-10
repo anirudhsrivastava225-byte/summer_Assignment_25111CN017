@@ -1,4 +1,4 @@
-package Day_4;
+package Day_04;
 import java.util.* ;
 public class armStrongCheck {
     public static void main ( String[] args ) {

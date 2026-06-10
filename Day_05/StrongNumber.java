@@ -1,4 +1,4 @@
-package Day_5;
+package Day_05;
 import java.util.Scanner ;
 public class StrongNumber {
     private final int number ;

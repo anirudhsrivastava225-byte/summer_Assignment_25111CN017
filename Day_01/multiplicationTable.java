@@ -1,4 +1,4 @@
-package Day_1;
+package Day_01;
 import java.util.Scanner;
 public class multiplicationTable {
     public static void main(String[] args){

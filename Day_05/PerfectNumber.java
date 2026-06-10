@@ -1,4 +1,4 @@
-package Day_5;
+package Day_05;
 import java.util.Scanner ;
 public class PerfectNumber {
     private final int inventory ;
