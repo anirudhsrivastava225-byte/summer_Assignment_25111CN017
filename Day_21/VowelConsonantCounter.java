@@ -20,7 +20,7 @@ public class VowelConsonantCounter {
                 if ( ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ) {
                     vowels++ ;
                 } else {
-                    conसरणants++ ;
+                    consonants++ ;
                 }
             }
         }

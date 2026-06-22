@@ -12,9 +12,6 @@ public class RemoveDuplicates {
     public int remove () {
         int n = arrayHolder.length ;
         if ( n == 0 || n == 1 ) return n ;
-
-        // Note: This logic assumes the array is sorted for O(n) or handles unsorted with O(n^2)
-        // For your style, I will implement a simple in-place removal for unsorted arrays
         int uniqueCount = 0 ;
         for ( int i = 0 ; i < n ; i++ ) {
             boolean isDuplicate = false ;
